@@ -1,0 +1,66 @@
+body {
+    background: black;
+    height: 100vh;
+    color: white;
+    font: 1.3rem Inconsolata, monospace;
+    text-shadow: 0 0 5px #C8C8C8;
+}
+
+html{
+    min-height: 100%;
+    overflow: hidden;
+  }
+
+.blink::after {
+    content: "";
+    position: absolute;
+    background-color: #606060;
+    vertical-align: top;
+    margin-left: 1rem;
+    width: 10px;
+    height: 1.3rem;
+    -webkit-animation: blink 1s step-end infinite;
+    animation: blink 1s step-end infinite;
+}
+
+a {
+    color: white;
+}
+
+.at::first-letter {
+    content: '@';
+}
+
+::selection {
+    background-color: white;
+    color: black;
+    text-shadow: none;
+  }
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
