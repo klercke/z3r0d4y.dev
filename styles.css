@@ -23,12 +23,19 @@ html{
     animation: blink 1s step-end infinite;
 }
 
+button {
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    color: white;
+    font: 1.3rem Inconsolata, monospace;
+    text-shadow: 0 0 5px #C8C8C8;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
 a {
     color: white;
-}
-
-.at::first-letter {
-    content: '@';
 }
 
 ::selection {
