@@ -11,6 +11,14 @@ html{
     overflow: hidden;
   }
 
+table {
+    text-align: left;
+}
+
+th{
+    width: 50%;
+}
+
 .blink::after {
     content: "";
     position: absolute;
