@@ -5,17 +5,16 @@ function printAbout() {
         <br> Name: &emsp;&nbsp; "Konnor Otto Klercke"
         <br> Email: &emsp; "klercke@prototypexenon.com"
         <br> About: {
-        <br> &emsp;&emsp;&emsp;&emsp; My name is Konnor and I like placeholder text. I'll fill this in later.
-        <br> &emsp;&emsp;&emsp;&emsp; }
+        <br> 	My name is Konnor and I like placeholder text. I'll fill this in later.
+        <br> }
     `;
 }
 
 function ls() {
-    document.body.innerHTML = document.body.innerHTML + `
-        <br> [konnor.klercke@prototypexenon.com ~]# ls
-        <br> total 1
-        <br> -rw-r--r-- 1 konnor.klercke konnor.klercke &emsp; 4096 Mar 5 14:58 <button type="button" value="about.txt" onclick="interpretCommand('cat about.txt');">about.txt</button>
-    `;
+    document.body.innerHTML = document.body.innerHTML + `[konnor.klercke@prototypexenon.com ~]#  ls
+total 1
+-rw-r--r-- 1 konnor.klercke konnor.klercke &emsp; 4096 Mar 5 14:58 <button type="button" value="about.txt" onclick="interpretCommand('cat about.txt');">about.txt</button>
+`;
 }
 
 function cat(file) {
@@ -25,7 +24,7 @@ function cat(file) {
             break;
         default:
             document.body.innerHTML = document.body.innerHTML + `
-            <br> [konnor.klercke@prototypexenon.com ~]# cat ` + file + `
+            <br> [konnor.klercke@prototypexenon.com ~]#  cat ` + file + `
             <br> cat: ` + file + `: No such file or directory
             `;
             break;
@@ -38,41 +37,59 @@ function clear() {
 
 function help() {
     document.body.innerHTML = document.body.innerHTML + `
-        <br> [konnor.klercke@prototypexenon.com ~]# help
-        <br> ProtOS smash v1.1.1-release (silly fake website terminal)
-        <br> These shell commands are defined internally. Type 'help' to see this list.
-        <br>
-        <br> ls - lists all files and directories in the current working directory.
-        <br> help - prints this list.
-        <br> clear - clears the screen.
-        <br> cat [file] - prints the contents of 'file'.
+        [konnor.klercke@prototypexenon.com ~]#  help
+        ProtOS smash v1.1.1-release (silly fake website terminal)
+        These shell commands are defined internally. Type 'help' to see this list.
+        
+        ls - lists all files and directories in the current working directory.
+        help - prints this list.
+        clear - clears the screen.
+        cat [file] - prints the contents of 'file'.
     `;
 }
 
 window.onload = function init() {
     ls();
-    addPrompt();
+	addPrompt();
+
+	let inputBuffer = [];
+	
+	document.addEventListener('keydown', event => {
+		const validChars = "ABCDEFGHIJKLMNOPQRSTUVWQXYZabcdefghijklmnopqrstuvwxyz1234567890.,<>/!@#$%^&*()";
+		const key = event.key;
+
+		console.log(key);
+
+		if (key == "Enter") {
+			interpretCommand(inputBuffer.join(''));
+			inputBuffer = [];
+		}
+		else if (key == "Backspace") {
+			inputBuffer = inputBuffer.slice(0, inputBuffer.length);
+			document.getElementById('userInput').innerHTML = document.getElementById('userInput').innerHTML.slice(0, -1);
+		}
+		else if (validChars.indexOf(key) === -1) {
+			return;
+		}
+		else {
+			inputBuffer.push(key);
+			document.getElementById('userInput').innerHTML += key;
+
+			//console.log(inputBuffer);
+		}
+	});
+
 }
 
 function removePrompt() {
-    var blink = document.getElementsByClassName('blink');
-    for (var i = 0; i < blink.length; i++) {
-        blink[i].remove();
-    }
+    var prompt = document.getElementById('prompt');
+    prompt.remove();
 }
 
 function addPrompt() {
-    document.body.innerHTML = document.body.innerHTML + `
-        <div class="blink">[konnor.klercke@prototypexenon.com ~]# <form> <input autocomplete="off" size="1" type="text" id="command"/> <input type="submit" style="display: none;" onclick="interpretCommand()" /> </form> </div>
-    `;
-
-    var input = document.getElementsByTagName('input')[0];
-
-    input.addEventListener("keydown", function(){
-        this.size = this.value.length + 1;
-    });
-
-    input.select();
+    document.body.innerHTML = document.body.innerHTML + `<span id='prompt'>[konnor.klercke@prototypexenon.com ~]# <span id='userInput'></span></span>`;
+	
+	document.getElementById('userInput').innerHTML = "&nbsp;";
 }
 
 function interpretCommand(input) {
@@ -82,7 +99,7 @@ function interpretCommand(input) {
         command = command.split(" ");
     }
     else {
-        console.log(input);
+    	console.log(input);
         var command = input.split(" ");
     }
     
