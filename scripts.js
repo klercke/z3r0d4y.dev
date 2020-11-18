@@ -38,7 +38,7 @@ function clear() {
 function help() {
     document.body.innerHTML = document.body.innerHTML + `
         [konnor.klercke@prototypexenon.com ~]#  help
-        ProtOS smash v1.1.1-release (silly fake website terminal)
+        ProtOS smash v2.1.0-release (silly fake website terminal)
         These shell commands are defined internally. Type 'help' to see this list.
         
         ls - lists all files and directories in the current working directory.
