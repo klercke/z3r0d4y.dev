@@ -87,7 +87,7 @@ function removePrompt() {
 }
 
 function addPrompt() {
-    document.body.innerHTML = document.body.innerHTML + `<span id='prompt'>[konnor.klercke@prototypexenon.com ~]# <span id='userInput'></span></span>`;
+    document.body.innerHTML = document.body.innerHTML + `<span id='prompt'>[klercke@prototypexenon.com ~]# <span id='userInput'></span></span>`;
 	
 	document.getElementById('userInput').innerHTML = "&nbsp;";
 }
