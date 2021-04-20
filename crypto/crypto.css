@@ -27,7 +27,7 @@ div.third img {
 	src: url('../fonts/source-code-pro/SourceCodePro-Regular.otf');
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1350px) {
 	.third {
 		display: block;
 		width: 95%;
