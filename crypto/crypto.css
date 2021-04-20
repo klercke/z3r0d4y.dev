@@ -14,13 +14,23 @@ h2 {
 	display: inline-block;
 	width: 30%;
 	margin: 1%
+	float: center;
 }
 
 div.third img {
-	width: 100%;
+	max-width: 100%;
+	height: auto;
 }
 
 @font-face {
 	font-family: SourceCodePro;
 	src: url('../fonts/source-code-pro/SourceCodePro-Regular.otf');
+}
+
+@media screen and (max-width: 900px) {
+	.third {
+		display: block;
+		width: 95%;
+		margin: 2.5%;
+	}
 }
