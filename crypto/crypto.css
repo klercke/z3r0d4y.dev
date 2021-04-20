@@ -1,0 +1,26 @@
+body {
+	background-color: var(--nord0); 
+	color: var(--nord4);
+	text-align: center;
+	font-family: "SourceCodePro", Monospace;
+}
+
+h2 {
+	margin: 0;
+	padding: 0;
+}
+
+.third {
+	display: inline-block;
+	width: 30%;
+	margin: 1%
+}
+
+div.third img {
+	width: 100%;
+}
+
+@font-face {
+	font-family: SourceCodePro;
+	src: url('../fonts/source-code-pro/SourceCodePro-Regular.otf');
+}
