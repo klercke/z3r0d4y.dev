@@ -60,33 +60,82 @@ window.onload = function init() {
     ls();
 	addPrompt();
 
-	let inputBuffer = [];
+	var inputBuffer = [];
 	
-	document.addEventListener('keydown', event => {
-		const validChars = "ABCDEFGHIJKLMNOPQRSTUVWQXYZabcdefghijklmnopqrstuvwxyz1234567890.,<>/!@#$%^&*()";
-		const key = event.key;
+    var bufferIdx = 0;
 
-		console.log(key);
+	document.addEventListener('keydown', event => {
+		const validChars = "ABCDEFGHIJKLMNOPQRSTUVWQXYZabcdefghijklmnopqrstuvwxyz1234567890.,<>/!@#$%^&*() ";
+		const key = event.key;
 
 		if (key == "Enter") {
 			interpretCommand(inputBuffer.join(''));
 			inputBuffer = [];
+            bufferIdx = 0;
 		}
+        else if (key == "ArrowRight") {
+            if (bufferIdx < inputBuffer.length) {
+                bufferIdx++;
+                document.getElementById('userInput').innerText = 
+                    inputBuffer.join("").substr(0, bufferIdx);
+                document.getElementById('userInput2').innerText = 
+                    inputBuffer.join("").substr(bufferIdx + 1);
+                if (bufferIdx <= inputBuffer.length - 1)
+                    document.getElementById('cursorCharacter').innerText = 
+                        inputBuffer[bufferIdx];
+                else
+                    document.getElementById('cursorCharacter').innerText = "";
+            }
+        }
+        else if (key == "ArrowLeft") {
+            if (bufferIdx > 0) { 
+                bufferIdx--;
+                document.getElementById('userInput').innerText = 
+                    inputBuffer.join("").substr(0, bufferIdx);
+                document.getElementById('userInput2').innerText = 
+                    inputBuffer.join("").substr(bufferIdx + 1);    
+                if (bufferIdx <= inputBuffer.length - 1)
+                    document.getElementById('cursorCharacter').innerText = 
+                        inputBuffer[bufferIdx];
+                else
+                    document.getElementById('cursorCharacter').innerText = ""    ;  
+            }   
+        }
 		else if (key == "Backspace") {
-			inputBuffer = inputBuffer.slice(0, inputBuffer.length);
-			document.getElementById('userInput').innerHTML = document.getElementById('userInput').innerHTML.slice(0, -1);
-		}
+            if (bufferIdx > 0) {
+                bufferIdx--;
+                inputBuffer.splice(bufferIdx, 1);
+                document.getElementById('userInput').innerText = 
+                    inputBuffer.join("").substr(0, bufferIdx);
+                document.getElementById('userInput2').innerText = 
+                    inputBuffer.join("").substr(bufferIdx + 1);    
+                if (bufferIdx <= inputBuffer.length - 1)
+                    document.getElementById('cursorCharacter').innerText = 
+                        inputBuffer[bufferIdx];
+                else
+                    document.getElementById('cursorCharacter').innerText = "";
+            }
+        }
+
 		else if (validChars.indexOf(key) === -1) {
+            console.log("Unknown key: " + key);
 			return;
 		}
 		else {
-			inputBuffer.push(key);
-			document.getElementById('userInput').innerHTML += key;
-
-			//console.log(inputBuffer);
+            inputBuffer.splice(bufferIdx, 0, key)
+            bufferIdx++;
+			document.getElementById('userInput').innerText = 
+                inputBuffer.join("").substr(0, bufferIdx);
+            document.getElementById('userInput2').innerText = 
+                inputBuffer.join("").substr(bufferIdx + 1);    
+            if (bufferIdx <= inputBuffer.length - 1)
+                document.getElementById('cursorCharacter').innerText = 
+                    inputBuffer[bufferIdx];
+            else
+                document.getElementById('cursorCharacter').innerText = "";
 		}
+        console.log(inputBuffer);
 	});
-
 }
 
 function removePrompt() {
@@ -95,7 +144,7 @@ function removePrompt() {
 }
 
 function addPrompt() {
-    document.body.innerHTML = document.body.innerHTML + `<span id='prompt'>[klercke@prototypexenon.com ~]# <span id='userInput'></span></span>`;
+    document.body.innerHTML = document.body.innerHTML + `<span id='prompt'>[klercke@prototypexenon.com ~]# <span id='userInput'></span><span id='cursorCharacter'></span><span id='userInput2'></span></span>`;
 	
 	document.getElementById('userInput').innerHTML = "&nbsp;";
 }

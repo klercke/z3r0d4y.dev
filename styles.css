@@ -15,7 +15,6 @@ th {
     font: inherit;
 }
 
-
 form {
     display: inline;
     margin-right: 0;
@@ -35,18 +34,15 @@ input {
 #userInput::after {
     content: "";
     position: absolute;
-    background-color: #606060;
-    vertical-align: top;
+    background-color: white;
+    vertical-align: center;
     margin-left: 0;
     margin-top: .1rem;
-    width: 10px;
-    height: 1rem;
+    width: .8rem;
+    height: 1.4rem;
+    z-index: -1;
     -webkit-animation: blink 1s step-end infinite;
     animation: blink 1s step-end infinite;
-}
-
-#userInput {
-	display: inline;
 }
 
 button {
@@ -95,5 +91,39 @@ a {
 
     100% {
         opacity: 1.0;
+    }
+}
+
+#cursorCharacter {
+    color: black;
+    -webkit-animation: flash 1s step-end infinite;
+    animation: flash 1s step-end infinite;
+}
+
+@-webkit-keyframes flash {
+    0% {
+        color: black;
+    }
+
+    50% {
+        color: white;
+    }
+
+    100% {
+        color: black;
+    }
+}
+
+@keyframes flash {
+    0% {
+        color: black;
+    }
+
+    50% {
+        color: white;
+    }
+
+    100% {
+        color: black;
     }
 }
