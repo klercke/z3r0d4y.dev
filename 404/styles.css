@@ -1,0 +1,97 @@
+body{
+    background: black;
+    color: white;
+    font: 1.3em Inconsolata, monospace;
+    text-shadow: 0 0 0.1em #C8C8C8;
+	white-space: pre;
+}
+
+#footer {
+	font-size: .7em;
+}
+
+#quote::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    vertical-align: center;
+    margin-left: 0;
+    margin-top: 0rem;
+    width: .8rem;
+    height: 1.17em;
+    z-index: -1;
+    -webkit-animation: blink 1s step-end infinite;
+    animation: blink 1s step-end infinite;
+}
+
+a {
+    color: white;
+}
+
+::selection {
+    background-color: white;
+    color: black;
+    text-shadow: none;
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+#cursorCharacter {
+    color: black;
+    -webkit-animation: flash 1s step-end infinite;
+    animation: flash 1s step-end infinite;
+}
+
+@-webkit-keyframes flash {
+    0% {
+        color: black;
+    }
+
+    50% {
+        color: white;
+    }
+
+    100% {
+        color: black;
+    }
+}
+
+@keyframes flash {
+    0% {
+        color: black;
+    }
+
+    50% {
+        color: white;
+    }
+
+    100% {
+        color: black;
+    }
+}
