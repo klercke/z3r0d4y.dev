@@ -11,6 +11,7 @@ body{
 }
 
 #quote {
+	font-size: 1.17em;
 	word-wrap: break-word;
 	white-space: normal;
 }
