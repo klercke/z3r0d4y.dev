@@ -10,6 +10,11 @@ body{
 	font-size: .7em;
 }
 
+#quote {
+	word-wrap: break-word;
+	white-space: normal;
+}
+
 #quote::after {
     content: "";
     position: absolute;
