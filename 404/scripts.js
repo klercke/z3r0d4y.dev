@@ -15,7 +15,8 @@ var quotes =[
 	"// Have you tried not getting an error?",
 	"// Why'd you do that?",
 	"// Whoever gave you this link is a stinkin' liar!",
-	"// So, you come here often?"
+	"// So, you come here often?",
+	"// Warning: this website can expose you to chemicals which are known to the state of California to cause cancer, birth defects, or other reproductive harm"
 ]
 
 window.onload = function() {
