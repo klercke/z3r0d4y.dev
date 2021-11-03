@@ -13,7 +13,7 @@ function catAbout() {
         `   Outside of the tech world, I love to go camping and hiking, a passion which I got through my experience earning my Eagle Scout award.\r\n` +
         `   Cooking is another hobby of mine, especially customizing recipes to change things up.\r\n` +
         `   I've also lived in quite a few places in my relatively short time on this Earth, including Baltimore, Rochester, Stockholm, Cincinnati, Louisville, and Nashville.\r\n` +
-        `   One of my goals in life is to visit every National Park in the United States. ` +
+        `   One of my goals in life is to visit every National Park in the United States. \r\n` +
         `}\r\n`;
 
 }

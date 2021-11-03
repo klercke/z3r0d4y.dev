@@ -1,0 +1,26 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Contact: mailto:security@prototypexenon.com
+Contact: mailto:security@ptxe.dev
+Expires: 2022-12-31T17:00:00.000Z
+Encryption: https://prototypexenon.com/pgp-key.txt
+Acknowledgments: https://prototypexenon.com/hall-of-fame.txt
+Preferred-Languages: en
+Canonical: https://prototypexenon.com/.well-known/security.txt
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEE3gAcseKfsm1MJFlaBTMFLAaWYvIFAmGB8X4ACgkQBTMFLAaW
+YvJTXRAA7iYCm2Wrz+WlNb9yh0vS4cXusPdRJbBJHVTbkOrP3uQak1bfucFtKSIC
+NmhcSfElY/t8oXkf3CBHGmaCP/YLwkBxythdUKhGxog1gh1CtM+R0IxZln5f7FFz
+JeEnQAxHhNQI5LYJm2RQVJN59oGIYqO/bwSA0iwWkp0/iGM8gsY45vt1DaZ0xqNv
++T0FFMSYvF+h7UCTCKYpqO1LsjVotWDgE2qd4szCaDVyoCQ31q6/G79mme8paYUu
+pLVzZbPGvWL+dZKJBmuJZ37nJJMkyMLdYUFWETKAoa3591Bar3ElfxeXIRpcqTKX
+9A5av+c8RD0tyZHCN9XQVS/OzfAe9D3To3vmEXEb2WWMQ/JkqxL4nLwWgsU7esFf
+MUS5NocUAQUYKoPvIAQ265fRQS6uHpLRt17JtR0JpLWTClALiCANkTHEhIQn/N6W
+MAFh1C1L2alnkrSUoSwaSpFBzps7BkLod5VPyUTLdRKhHFtCR1fG985HvsRVARdE
+gF4XZ5Adyh/N8e0ah1fziVNSix/EBRRZfHt60Nvf82L/IF1Tc76m1AEr8n8k+hIr
+eNWdglkQymaVytjkO5YxmVcma0LUJN+3UaGDK2B6GLPsTIDoF1qy/L6HKvZo9zq1
+OEbUnYj0XhMFlsEoIlDBPwujJHygSr+Or4iVPPwm5YulSJFejaQ=
+=RaAr
+-----END PGP SIGNATURE-----
