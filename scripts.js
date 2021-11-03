@@ -211,4 +211,6 @@ function interpretCommand(input) {
     }
 
     addPrompt();
+
+    window.scrollTo(0,document.body.scrollHeight);
 }
