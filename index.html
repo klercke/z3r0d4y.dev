@@ -8,12 +8,12 @@
     <script src="scripts.js"></script> 
 </head>
 
-<body>ProtOS 2.1.0 Shell
+<body>ProtOS 2.2.0 Shell
   
 Login: klercke
 Password:
 Last Login: [insert date here]
-Welcome to ProtOS 2.1.0 Shell
+Welcome to ProtOS 2.2.0 Shell
     
  * LinkedIn: &emsp; <a href=https://linkedin.com/in/klercke>https://linkedin.com/in/klercke</a>
  * Website: &emsp;&nbsp; <a href=http://prototypexenon.com>http://prototypexenon.com</a>
@@ -39,10 +39,11 @@ System information as of [current time]:
         </tr>
     </table>
 Welcome to ProtOS 2.2.0
+<span style="display: none;">
+    <!--These iframes are to allow JS to read the publicly accessible files-->
+    <iframe style="position:absolute; bottom: -5000px;" id="security.txt" src=".well-known/security.txt" style="display: none;"></iframe>
+    <iframe style="position:absolute; bottom: -5000px;" id="dnt-policy.txt" src=".well-known/dnt-policy.txt" style="display: none;"></iframe>
+    <iframe style="position:absolute; bottom: -5000px;" id="hall-of-fame.txt" src="hall-of-fame.txt" style="display: none;"></iframe>
+    <iframe style="position:absolute; bottom: -5000px;" id="pgp-key.txt" src="pgp-key.txt" style="display: none;"></iframe>
+</span>
 </body>
-
-<!--These iframes are to allow JS to read the publicly accessible files-->
-<iframe id="security.txt" src=".well-known/security.txt" style="display: none;"></iframe>
-<iframe id="dnt-policy.txt" src=".well-known/dnt-policy.txt" style="display: none;"></iframe>
-<iframe id="hall-of-fame.txt" src="hall-of-fame.txt" style="display: none;"></iframe>
-<iframe id="pgp-key.txt" src="pgp-key.txt" style="display: none;"></iframe>
