@@ -1,0 +1,16 @@
+This file is a date-ordered compilation of special thanks to anyone who has
+helped me in a significant way throughout my tech journey. This is sorted
+alphabetically by category, then date.
+
+# Personal Thanks 
+    2021/11/2: Brian Bullis: Thanks for always being my guinea pig and going to
+    such lengths as to try to test my pgp signatures on your iPhone.
+
+# Website Tools
+    2021/11/2: https://securitytxt.org/: This tool gave me a great idea of what
+    to include in my security.txt file as well as inspiring the creation of
+    this acknowledgements file.
+
+    2021/11/2: https://www.eff.org/dnt-policy: This served as a good drop-in
+    DNT policy. I do not collect user data, but felt like I should include
+    this to raise the level of trust.
