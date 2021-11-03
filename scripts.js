@@ -15,19 +15,50 @@ function catAbout() {
         `   I've also lived in quite a few places in my relatively short time on this Earth, including Baltimore, Rochester, Stockholm, Cincinnati, Louisville, and Nashville.\r\n` +
         `   One of my goals in life is to visit every National Park in the United States. \r\n` +
         `}\r\n`;
+}
 
+function catRealFile(iframeid) {
+    // https://stackoverflow.com/questions/4533018/how-to-read-a-text-file-from-server-using-javascript
+
+    var oFrame = document.getElementById(iframeid);
+    var strRawContents = oFrame.contentWindow.document.body.childNodes[0].innerHTML;
+    while (strRawContents.indexOf("\r") >= 0)
+        strRawContents = strRawContents.replace("\r", "");
+    var arrLines = strRawContents.split("\n");
+
+    document.body.innerHTML += "[klercke@prototypexenon.com ~]# cat " + iframeid + "\r\n";
+
+    for (let i = 0; i < arrLines.length; i++) {
+        document.body.innerHTML += arrLines[i] + "\r\n";
+      } 
 }
 
 function ls() {
     document.body.innerHTML += `[klercke@prototypexenon.com ~]# ls\r\n` +
         `total 1\r\n` + 
-        `-rw-r--r-- 1 klercke klercke &emsp; 4096 Mar 5 14:58 <button type="button" value="about.json" onclick="interpretCommand('cat about.json');">about.json</button>\r\n`;
+        `-rw-r--r-- 1 klercke klercke &emsp; 4096 Mar 5 14:58 <button type="button" value="about.json" onclick="interpretCommand('cat about.json');">about.json</button>\r\n` +
+        `-rw-r--r-- 1 klercke klercke &emsp; 4096 Nov 2 23:27 <button type="button" value=dnt-policy.txt" onclick="interpretCommand('cat dnt-policy.txt');">dnt-policy.txt</button>\r\n` +
+        `-rw-r--r-- 1 klercke klercke &emsp; 4096 Nov 2 23:35 <button type="button" value=hall-of-fame.txt" onclick="interpretCommand('cat hall-of-fame.txt');">hall-of-fame.txt</button>\r\n` +
+        `-rw-r--r-- 1 klercke klercke &emsp; 4096 Nov 2 23:35 <button type="button" value=pgp-key.txt" onclick="interpretCommand('cat pgp-key.txt');">pgp-key.txt</button>\r\n` +
+        `-rw-r--r-- 1 klercke klercke &emsp; 4096 Nov 2 22:33 <button type="button" value="security.txt" onclick="interpretCommand('cat security.txt');">security.txt</button>\r\n`;
 }
 
 function cat(file) {
     switch (file) {
         case "about.json":
             catAbout();
+            break;
+        case "security.txt":
+            catRealFile("security.txt");
+            break;
+        case "dnt-policy.txt":
+            catRealFile("dnt-policy.txt");
+            break;
+        case "hall-of-fame.txt":
+            catRealFile("hall-of-fame.txt");
+            break;
+        case "pgp-key.txt":
+            catRealFile("pgp-key.txt");
             break;
         default:
             document.body.innerHTML +=
