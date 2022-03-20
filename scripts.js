@@ -69,7 +69,13 @@ function cat(file) {
 }
 
 function clear() {
-    document.body.innerHTML = "";
+    document.body.innerHTML = `<span style="display: none;">` +
+    `<!--These iframes are to allow JS to read the publicly accessible files-->` +
+    `<iframe style="position:absolute; bottom: -5000px;" id="security.txt" src=".well-known/security.txt" style="display: none;"></iframe>` +
+    `<iframe style="position:absolute; bottom: -5000px;" id="dnt-policy.txt" src=".well-known/dnt-policy.txt" style="display: none;"></iframe>` +
+    `<iframe style="position:absolute; bottom: -5000px;" id="hall-of-fame.txt" src="hall-of-fame.txt" style="display: none;"></iframe>` +
+    `<iframe style="position:absolute; bottom: -5000px;" id="pgp-key.txt" src="pgp-key.txt" style="display: none;"></iframe>` +
+    `</span>`;
 }
 
 function help() {
