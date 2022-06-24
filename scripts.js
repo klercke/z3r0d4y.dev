@@ -1,9 +1,9 @@
 function catAbout() {
     document.body.innerHTML = document.body.innerHTML +
-        `[klercke@prototypexenon.com ~]# cat about.json\r\n` +
+        `[d0c@z3r0d4y.dev ~]# cat about.json\r\n` +
         `\r\n` +
         `Name: &emsp;&nbsp; "Konnor Otto Klercke"\r\n` +
-        `Email: &emsp; "klercke@prototypexenon.com"\r\n` +
+        `Email: &emsp; "d0c@z3r0d4y.dev"\r\n` +
         `About: {\r\n` +
         `   My name is Konnor Klercke and this is my website.\r\n` +
         `   I'm a FOSS (free and open source software) enthusiast, and an infosec / privacy hobbyist.\r\n` +
@@ -26,7 +26,7 @@ function catRealFile(iframeid) {
         strRawContents = strRawContents.replace("\r", "");
     var arrLines = strRawContents.split("\n");
 
-    document.body.innerHTML += "[klercke@prototypexenon.com ~]# cat " + iframeid + "\r\n";
+    document.body.innerHTML += "[d0c@z3r0d4y.dev ~]# cat " + iframeid + "\r\n";
 
     for (let i = 0; i < arrLines.length; i++) {
         document.body.innerHTML += arrLines[i] + "\r\n";
@@ -34,7 +34,7 @@ function catRealFile(iframeid) {
 }
 
 function ls() {
-    document.body.innerHTML += `[klercke@prototypexenon.com ~]# ls\r\n` +
+    document.body.innerHTML += `[d0c@z3r0d4y.dev ~]# ls\r\n` +
         `total 1\r\n` + 
         `-rw-r--r-- 1 klercke klercke &emsp; 4096 Mar 5 14:58 <button type="button" value="about.json" onclick="interpretCommand('cat about.json');">about.json</button>\r\n` +
         `-rw-r--r-- 1 klercke klercke &emsp; 4096 Nov 2 23:27 <button type="button" value=dnt-policy.txt" onclick="interpretCommand('cat dnt-policy.txt');">dnt-policy.txt</button>\r\n` +
@@ -62,7 +62,7 @@ function cat(file) {
             break;
         default:
             document.body.innerHTML +=
-            `[klercke@prototypexenon.com ~]#  cat ` + file + `\r\n` +
+            `[d0c@z3r0d4y.dev ~]#  cat ` + file + `\r\n` +
             `cat: ` + file + `: No such file or directory\r\n`;
             break;
     }    
@@ -79,7 +79,7 @@ function clear() {
 }
 
 function help() {
-    document.body.innerHTML += `[klercke@prototypexenon.com ~]# help\r\n` + 
+    document.body.innerHTML += `[d0c@z3r0d4y.dev ~]# help\r\n` + 
         `ProtOS smash v2.1.0-release (silly fake website terminal)\r\n` +
         `These shell commands are defined internally. Type 'help' to see this list.\r\n` +
         `\r\n`+
@@ -176,7 +176,7 @@ function removePrompt() {
 }
 
 function addPrompt() {
-    document.body.innerHTML += `<span id='prompt'>[klercke@prototypexenon.com ~]# <span id='userInput'></span><span id='cursorCharacter'></span><span id='userInput2'></span></span>`;
+    document.body.innerHTML += `<span id='prompt'>[d0c@z3r0d4y.dev ~]# <span id='userInput'></span><span id='cursorCharacter'></span><span id='userInput2'></span></span>`;
 	
 	document.getElementById('userInput').innerHTML = "";
 }
@@ -211,7 +211,7 @@ function interpretCommand(input) {
             break;
         default:
             document.body.innerHTML = document.body.innerHTML + 
-                `[klercke@prototypexenon.com ~]# ` + command + `\r\n` +
+                `[d0c@z3r0d4y.dev ~]# ` + command + `\r\n` +
                 `smash: ` + command[0] + `: command not found\r\n`;
             break;
     }

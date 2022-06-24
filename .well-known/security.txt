@@ -1,26 +1,26 @@
-- -----BEGIN PGP SIGNED MESSAGE-----
+-----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA512
 
 Contact: mailto:security@prototypexenon.com
 Contact: mailto:security@ptxe.dev
 Expires: 2022-12-31T17:00:00.000Z
-Encryption: https://prototypexenon.com/pgp-key.txt
-Acknowledgments: https://prototypexenon.com/hall-of-fame.txt
+Encryption: https://z3r0d4y.dev/pgp-key.txt
+Acknowledgments: https://z3r0d4y.dev/hall-of-fame.txt
 Preferred-Languages: en
-Canonical: https://prototypexenon.com/.well-known/security.txt
+Canonical: https://z3r0d4y.dev/.well-known/security.txt
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEKu6sEzxIIVqhb1r2boKJTr3NY+cFAmGhsh0ACgkQboKJTr3N
-Y+cIAgHf406mAViEL0UfqcXgjVmuuwAJPkZ/3Fvv9Gg9xa8Os54MSWOcu09jt
-R5vmtUkEvj71biSuF0JxqivuGUASJsGNR+oMbVlCL/ozumP++DBVyhyAjvUXCn9q
-H1YAJTS6Oaw7W/t3P1BtprYRuXTulZSiAtIPyD3bRl5Mgcrv/0U3vCo4sNlXT83a
-8q8M+9ePQzyT/dOtNiURrPCYw4S0pF1ddk0Axzk5jXFEZBRjQvekBbbOUJvNtc/N
-bULQarvSmdjW5QqPIufnMshinSIRDbIX+pMXy5oRXGNwcQYY6IULEFOuM0KzLD99
-Rpw21cj6Ht9sKThV/P5EgRaHc3m+HQRNF6D2pF4A71Vp8xn30FDsKmg+WDkhVcdf
-FvKOecAlgCEJEJ6OOJZRQIxUgYkGTktXTE0x5S6lZ+ruASur9BX5shjKYw41j4Le
-PDoTDeUwBlScu0fHSRBP+RlicmTS7UvPHYklV2gKFZ1QHYkkIjUezatFXX+uBfMV
-5ZaB6TnsUFqAmqgCSi/KSifuOnz3oColFk8u5IO8NcRrEHvsmsUGG7+rCZaFaPPw
-KyaxL2qy6Fq4B5G+bPBzS7lwp7PQezk2kqxhj/bIpND7+fS6Rs5l/23Qq6mRYTJM
-0UEaitDOlcD9X564v8lbtoJNlGRvncHeAdHJYDq3HeYmSbe99d0=
-=FxwD
+iQIzBAEBCgAdFiEE3gAcseKfsm1MJFlaBTMFLAaWYvIFAmK0/5YACgkQBTMFLAaW
+YvImtA//bQ3VY8D9L/R+Ss97KrQTdVVVrNTU4Vp1HF5Io0nmWo5pesSgCE98t1bv
+sZoK6PYd4kxhDm1m+falf6nFz++SNvdfMNCzcv2EFi4qffBzYmkJi4eAlDkCHGX3
+1ZCGeYVRD7CILxV2jrjZzdWHypb3F/sHHUp9bIIHkxch+MX5ONk8/7+n7EjxhKks
+/4rZMvxze9abI2g6MJ+1cNPT66DaDUDE14AriHSph9FBiiTWoPoTzsdkKwZSCMKR
+fpJBz/mRV6Yo9VyBlJSumJxzsZ1FcF2FlF5OYdAegOY9K2B8AfYJYv+9VyyzR4h1
+EuWblWH+M7zZq7vsmN9edlEUrNRKTIYd0PRF1oVgt2u05oazoruioUzFAkGZEAkg
+C0gqbctXQMzL/3Zn9xf/KletJTd+DO/tuLRfb4NxS+skvWWUDFfry7NFXOa7i5sb
+9aIXj6MlHeb8abwBrYoHebckP41eeI1SrRxPBI9EhS8ifbM1KKi14hj8dVkknrHi
+xs12UCtdT2ckxTec/tSZdtID3bXWKumoIIziBJlf/0FjFBmapv87vNKocfNALMXY
+IjKw48cFCDTt8RvVr+jc44MJkdJdQ3kkdQaE4FjniLR2OtDhfQ8cOKKieA1bqvXF
+fYFpT9HylQENtOxiDYAhZoi2tagq7f20NlMG4bWsgDejZEc4t50=
+=eReg
 -----END PGP SIGNATURE-----
