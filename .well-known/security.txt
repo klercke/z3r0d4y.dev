@@ -1,5 +1,5 @@
 -----BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA512
+Hash: SHA256
 
 Contact: mailto:security@prototypexenon.com
 Contact: mailto:security@ptxe.dev
@@ -10,17 +10,17 @@ Preferred-Languages: en
 Canonical: https://z3r0d4y.dev/.well-known/security.txt
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEE3gAcseKfsm1MJFlaBTMFLAaWYvIFAmK0/5YACgkQBTMFLAaW
-YvImtA//bQ3VY8D9L/R+Ss97KrQTdVVVrNTU4Vp1HF5Io0nmWo5pesSgCE98t1bv
-sZoK6PYd4kxhDm1m+falf6nFz++SNvdfMNCzcv2EFi4qffBzYmkJi4eAlDkCHGX3
-1ZCGeYVRD7CILxV2jrjZzdWHypb3F/sHHUp9bIIHkxch+MX5ONk8/7+n7EjxhKks
-/4rZMvxze9abI2g6MJ+1cNPT66DaDUDE14AriHSph9FBiiTWoPoTzsdkKwZSCMKR
-fpJBz/mRV6Yo9VyBlJSumJxzsZ1FcF2FlF5OYdAegOY9K2B8AfYJYv+9VyyzR4h1
-EuWblWH+M7zZq7vsmN9edlEUrNRKTIYd0PRF1oVgt2u05oazoruioUzFAkGZEAkg
-C0gqbctXQMzL/3Zn9xf/KletJTd+DO/tuLRfb4NxS+skvWWUDFfry7NFXOa7i5sb
-9aIXj6MlHeb8abwBrYoHebckP41eeI1SrRxPBI9EhS8ifbM1KKi14hj8dVkknrHi
-xs12UCtdT2ckxTec/tSZdtID3bXWKumoIIziBJlf/0FjFBmapv87vNKocfNALMXY
-IjKw48cFCDTt8RvVr+jc44MJkdJdQ3kkdQaE4FjniLR2OtDhfQ8cOKKieA1bqvXF
-fYFpT9HylQENtOxiDYAhZoi2tagq7f20NlMG4bWsgDejZEc4t50=
-=eReg
+iQIzBAEBCAAdFiEEKu6sEzxIIVqhb1r2boKJTr3NY+cFAmLAyYEACgkQboKJTr3N
+Y+eTEg/8DU11tXCsa8W1YxKA5iix5XJ54Idmks932iPtCfNXor37Imfxs6qIA50f
+0Lf4+u/5/IfswjYErh4WsEej39QvW3sVd0oHBSlPhFL7WMJZdKWk55u0lyFMRH03
+z3iBDfzmsgzN8qBNqEkr/29TbqndkjLb881pyeaIpbwbu85+G82YsNl54MI3GHvw
+Ff23GwtGVWAembz/OvkDTC+y4CjLdpCB6eHGDePicG5PEtNBxiExHjNY1ipk+wkI
+dVpceWs3VG5zuT0kM6T9I9F1T83ncxewqHGAwJ9w73wZxfP9gZJu21EX//n0VwIL
+BIig7zCqG2+DkLh9nu+pJTJN+cdPYTgSYnN6Z2tLy4jKj8GTCZXSZFLCHSbAHkT9
+MuwQ/L52zzFhRXI6U9gcr0imsSRT4fxh3uWxLCtu1lyL//ZdobSqPm0vmGBjpoDZ
+wMzXAatp3FdjHX6qMqtE+3ZrXSaSeDc3eqT3GQyTa/mgnmxSor8087hIbBjU0ykO
+AMSHC9a0fQSL1Qe4JGORheUhlcsqI/5U50k/T1n1YfSiHs+qV4eH5YcdF4GH3cg9
+KTPjW8ACw1PPvcMeFOk6VNMXECWqRy0wxxjnYYJMIf6xEheK/lBlzsGMTX+zG3vR
+xVt/7NhrXKnaWuDEWPbAIqzW7if/h6goWNJ6EMnZH0P1st6D5M8=
+=8gHJ
 -----END PGP SIGNATURE-----
