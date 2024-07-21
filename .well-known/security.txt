@@ -1,26 +1,32 @@
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA256
 
-Contact: mailto:security@prototypexenon.com
-Contact: mailto:security@ptxe.dev
-Expires: 2022-12-31T17:00:00.000Z
+Contact: mailto:security@z3r0d4y.dev
+Expires: 2024-12-31T17:00:00.000Z
 Encryption: https://z3r0d4y.dev/pgp-key.txt
 Acknowledgments: https://z3r0d4y.dev/hall-of-fame.txt
 Preferred-Languages: en
 Canonical: https://z3r0d4y.dev/.well-known/security.txt
+
+If this document is expired, please contact the above email address and request an update to security.txt.
+DO NOT DISCLOSE SENSITIVE INFORMATION IF THIS FILE IS EXPIRED OR ITS SIGNATURE IS INVALID.
+
+Update 2024-07-21
+
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEKu6sEzxIIVqhb1r2boKJTr3NY+cFAmLAyYEACgkQboKJTr3N
-Y+eTEg/8DU11tXCsa8W1YxKA5iix5XJ54Idmks932iPtCfNXor37Imfxs6qIA50f
-0Lf4+u/5/IfswjYErh4WsEej39QvW3sVd0oHBSlPhFL7WMJZdKWk55u0lyFMRH03
-z3iBDfzmsgzN8qBNqEkr/29TbqndkjLb881pyeaIpbwbu85+G82YsNl54MI3GHvw
-Ff23GwtGVWAembz/OvkDTC+y4CjLdpCB6eHGDePicG5PEtNBxiExHjNY1ipk+wkI
-dVpceWs3VG5zuT0kM6T9I9F1T83ncxewqHGAwJ9w73wZxfP9gZJu21EX//n0VwIL
-BIig7zCqG2+DkLh9nu+pJTJN+cdPYTgSYnN6Z2tLy4jKj8GTCZXSZFLCHSbAHkT9
-MuwQ/L52zzFhRXI6U9gcr0imsSRT4fxh3uWxLCtu1lyL//ZdobSqPm0vmGBjpoDZ
-wMzXAatp3FdjHX6qMqtE+3ZrXSaSeDc3eqT3GQyTa/mgnmxSor8087hIbBjU0ykO
-AMSHC9a0fQSL1Qe4JGORheUhlcsqI/5U50k/T1n1YfSiHs+qV4eH5YcdF4GH3cg9
-KTPjW8ACw1PPvcMeFOk6VNMXECWqRy0wxxjnYYJMIf6xEheK/lBlzsGMTX+zG3vR
-xVt/7NhrXKnaWuDEWPbAIqzW7if/h6goWNJ6EMnZH0P1st6D5M8=
-=8gHJ
+iQIzBAEBCAAdFiEEFN2CasQ7I3DRw7pqmgqjI1AzQ9IFAmadSNgACgkQmgqjI1Az
+Q9Jnng//QzELrU/JBDWGCJVllwgs9X9V0AJ3w3xfqyMgkd2qsRdrabqo6oF8n61/
+Xc2cAQeUU0pVNxpMBsa+421okhY3Lgjx8Lu7I6F2biRnLNe/yYoDEKsWCl69GNGD
+NJT58MGtKDcqUmWYG0Mx4Z8iscm4mnYE1g8/7hsgNMZKDjKlEe7EjhT4r5/ZS5lB
+HwHDFDz0zSHxkQMHwYa4qC5u2sXeR2FS41fIojkBHwz8TBwrnhUT6lrzTFG3csIL
+dgSXofLgW3sSs2j5MxhMKPyHh/D3mS+WRLelQ/dmM1a7Q+5a68PhBYky52+J71qx
+VyAf9l/j4wA4UwrRhCQIqRZWBOpFBwOQ7zL+/XeOCQout5JxcqRtPgWkLSg3Vf5+
++XmGtr/D/0PJDTqPZfJMOjeC2PaFkJzRjLbrN/wIFaGrbECaPg2YvJqbLBYIKM9u
+XowddA5WHAYrtqsj7AAHKp+tTce5rbs65/Xmo4Yc5Xuf61AXjsCi9OGxh5V48CnX
+lhWOSUTOedhBq1WhsKItRz3E92nfwg0HbJoLF4rLz4Z52KnQlX2RSKLsRFYRrg+Z
+hVP+UcLIKcn1MKMODTskeg9ufK5acNMklhlSJbaRd5HMkVeHthN9UrATZ1L5jRgz
+yby85sQg2dxiwf0x2g73swstr8LRwnNdIioJwLhVBWvWIfqa3kk=
+=w6hc
 -----END PGP SIGNATURE-----
+
