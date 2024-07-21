@@ -11,6 +11,3 @@ alphabetically by category, then date.
     to include in my security.txt file as well as inspiring the creation of
     this acknowledgements file.
 
-    2021/11/2: https://www.eff.org/dnt-policy: This served as a good drop-in
-    DNT policy. I do not collect user data, but felt like I should include
-    this to raise the level of trust.
